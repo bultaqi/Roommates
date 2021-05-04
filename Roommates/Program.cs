@@ -52,7 +52,7 @@ namespace Roommates
 
             //Console.WriteLine($"{updateRoom.MaxOccupancy}");
 
-            Room deleteRoom = roomRepo.GetById(8);
+            
             roomRepo.Delete(8);
 
         }

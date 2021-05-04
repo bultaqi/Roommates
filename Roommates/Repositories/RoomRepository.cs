@@ -15,7 +15,6 @@ namespace Roommates.Repositories
         /// </summary>
         public RoomRepository(string connectionString) : base(connectionString) { }
 
-        // ...We'll add some methods shortly...
         /// <summary>
         ///  Get a list of all Rooms in the database
         /// </summary>
@@ -51,7 +50,7 @@ namespace Roommates.Repositories
                         //  For our query, "Id" has an ordinal value of 0 and "Name" is 1.
                         int idColumnPosition = reader.GetOrdinal("Id");
 
-                        // We user the reader's GetXXX methods to get the value for a particular ordinal.
+                        // We use the reader's GetXXX methods to get the value for a particular ordinal.
                         int idValue = reader.GetInt32(idColumnPosition);
 
                         int nameColumnPosition = reader.GetOrdinal("Name");
